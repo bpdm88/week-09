@@ -3,13 +3,17 @@ import Paragraph from './Paragraph';
 import Square from './Square';
 import People from './People';
 
-const Stuff = () => (
+const Stuff = ({ showSquare }) => (
 <>
-    <Header />
-    <Paragraph />
-    <Square />
-    <People />
+    <Header>Hello, World!</Header>
+    <Paragraph>This is a paragraph about React.</Paragraph>
+    {showSquare ? (<Square colour = 'blue'/>) : null}
+    <People names = {["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]}/>
 </>
 );
+
+Stuff.defaultProps = {
+    showSquare: true,
+ };
 
 export default Stuff;
