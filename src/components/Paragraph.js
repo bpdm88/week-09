@@ -1,9 +1,18 @@
-   const Paragraph = ({ children }) => (
-    <p>{ children }</p>
-  );
-  
-  Paragraph.defaultProps = {
-    children: "This is the default message"
-   };
+import React from "react";
 
-  export default Paragraph;
+class Paragraph extends React.Component {
+
+  render() {
+    const { children } = this.props;
+
+    return (
+      <p> { children } </p>
+    );
+  }
+}
+  
+Paragraph.defaultProps = {
+  children: "This is the default message"
+};
+
+export default Paragraph;

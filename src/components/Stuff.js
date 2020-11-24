@@ -6,7 +6,7 @@ import People from './People';
 const Stuff = ({ showSquare }) => (
 <>
     <Header>Hello, World!</Header>
-    <Paragraph>This is a paragraph about React.</Paragraph>
+    <Paragraph>A paragraph about React</Paragraph>
     {showSquare ? (<Square colour = 'blue'/>) : null}
     <People names = {["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]}/>
 </>
