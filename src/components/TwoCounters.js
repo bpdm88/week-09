@@ -1,0 +1,53 @@
+import React from "react";
+
+class TwoCounters extends React.Component {
+
+    constructor(props) {
+
+        super(props);
+
+        this.state = ({value1: 1, value2: 1});
+        this.handle1 = this.handle1.bind(this);
+        this.handle2 = this.handle2.bind(this);
+    }
+
+    componentDidMount() {
+        const { value1, value2 } = this.state;
+
+        document.title = value1 + value2;
+    }
+
+    componentDidUpdate() {
+        const { value1, value2 } = this.state;
+
+        document.title = value1 + value2;
+    }
+
+    handle1() {
+        this.setState({ value1: this.state.value1 + 1})
+    }
+
+    handle2() {
+        this.setState({ value2: this.state.value2 + 1})
+    }
+
+    render() {
+
+        const { value1, value2 } = this.state
+
+        return(
+            <div>
+                <p>
+                    <button onClick={ this.handle1 }>+</button>
+                    <span>{ value1 }</span>
+                </p>
+                <p>
+                    <button onClick={ this.handle2 }>+</button>
+                    <span >{ value2 }</span>
+                </p>
+            </div>
+        )
+    }
+}
+
+export default TwoCounters;
