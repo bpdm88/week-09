@@ -1,8 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import Stuff from "./components/Stuff";
-import PasswordStrength from "./components/forms/PasswordStrength";
-import List from "./components/forms/List";
 import ToggleText from "./components/ToggleText";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -10,6 +8,9 @@ import FourOhFour from "./components/FourOhFour";
 import Length from "./components/forms/Length";
 import Square from "./components/Square";
 import StepCounter from "./components/StepCounter";
+import Forms from "./components/Forms";
+import Lifecycle from "./components/Lifecycle";
+import AddProp from "./components/AddProp";
 
 const App = () => (
     <Router>
@@ -18,17 +19,20 @@ const App = () => (
             <Route exact path="/">
                 <Length />
             </Route>
-            <Route exact path="/passwordstrength">
-                <PasswordStrength />
+            <Route exact path="/forms">
+                <Forms />
             </Route>
             <Route exact path="/stuff">
                 <Stuff />
             </Route>
+            <Route exact path="/lifecycle">
+                <Lifecycle/>
+            </Route>
+            <Route exact path="/addprop">
+                <AddProp/>
+            </Route>
             <Route exact path="/toggle">
                 <ToggleText initial="Hello" alternative="World" />
-            </Route>
-            <Route exact path="/list">
-                <List />
             </Route>
             <Route
                 path="/square/:colour"

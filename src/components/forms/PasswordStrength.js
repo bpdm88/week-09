@@ -34,6 +34,7 @@ class PasswordStrength extends React.Component {
         return (
             <section class="jumbotron">
                 <form class="form-group">
+                    <label>Password Strength:</label>
                     <input class="form-control" onChange={this.handleChange} value={this.state.input} style={{background: this.handleColour()}}/>
                 </form>
             </section>

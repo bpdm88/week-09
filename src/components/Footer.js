@@ -8,11 +8,11 @@ class Footer extends React.Component {
         return (
             <footer class="navbar navbar-expand-lg navbar-light bg-light">
                     <li class="nav-link"><Link to ="/">Home</Link></li>
-                    <li class="nav-link"><Link to ="/passwordstrength">Password Strength</Link></li>
-                    <li class="nav-link"><Link to = "/stuff">All the Stuff</Link></li>
+                    <li class="nav-link"><Link to ="/forms">Forms</Link></li>
+                    <li class="nav-link"><Link to = "/stuff">State</Link></li>
+                    <li class="nav-link"><Link to ="/lifecycle">Lifecycle</Link></li>
                     <li class="nav-link"><Link to = "/toggle">Toggle</Link></li>
-                    <li class="nav-link"><Link to ="/list">List</Link></li>
-                    <li class="nav-link"><Link to ="/stepcount/:max/:steps">Steps</Link></li>
+                    <li class="nav-link"><Link to ="/addprop">Adding Props</Link></li>
             </footer>
         );
     }
