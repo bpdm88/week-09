@@ -1,9 +1,7 @@
-import Header from './Header';
 import Paragraph from './Paragraph';
 import Square from './Square';
 import People from './People';
 import Clicked from './Clicked';
-import ToggleText from './ToggleText';
 import Counter from './Counter';
 import StepCounter from './StepCounter';
 import CatchMeIfYouCan from './CatchMeIfYouCan';
@@ -11,18 +9,15 @@ import RollCall from './RollCall';
 import GodCounter from './GodCounter';
 import TwoCounters from './TwoCounters';
 import Length from './forms/Length';
-import PasswordStrength from './forms/PasswordStrength';
 import TempConverter from './forms/TempConverter';
 import List from './forms/List';
 
 const Stuff = ({ showSquare }) => (
 <>
-    <Header>Hello, World!</Header>
     <Paragraph>A paragraph about React</Paragraph>
     {showSquare ? (<Square colour = 'pink'/>) : null}
     <People names = {["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]}/>
     <Clicked/>
-    <ToggleText initial = "Hello" alternative = "world"/>
     <Counter initial = {50} max = {100}/>
     <StepCounter max = {100} steps = {5}/>
     <CatchMeIfYouCan jump = {100}/>
@@ -30,7 +25,6 @@ const Stuff = ({ showSquare }) => (
     <GodCounter/>
     <TwoCounters/>
     <Length/>
-    <PasswordStrength/>
     <TempConverter/>
     <List/>
 </>

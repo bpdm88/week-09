@@ -42,7 +42,7 @@ class TempConverter extends React.Component {
         return(
             <section>
                 <form>
-                    <label for="celcius">Celcius </label>
+                    <label for="celcius">Celcius</label>
                     <input onChange={this.handleChangeC} value={ celcius } id="celcius" type="number"/>
                     <label for="farenheit">Farenheit</label>
                     <input onChange={this.handleChangeF} value={ farenheit } id="farenheit" type="number"/>
