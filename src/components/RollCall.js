@@ -16,9 +16,9 @@ class RollCall extends React.Component {
 
     render() {
         return(
-            <div>
-                <button onClick = {this.handleClick}>Next</button>
-                <p>{ this.props.names[this.state.person] }</p>
+            <div class="jumbotron">
+                <button class="btn btn-success" onClick = {this.handleClick}>Next</button>
+                <h3>{ this.props.names[this.state.person] }</h3>
             </div>
         )
     }

@@ -6,15 +6,13 @@ class Footer extends React.Component {
     render() {
 
         return (
-            <footer>
-                <ul>
-                    <li><Link to ="/">Home</Link></li>
-                    <li><Link to ="/passwordstrength">Password Strength</Link></li>
-                    <li><Link to = "/stuff">All the Stuff</Link></li>
-                    <li><Link to = "/toggle">Toggle</Link></li>
-                    <li><Link to ="/list">List</Link></li>
-                    <li><Link to ="/stepcount/:max/:steps">Steps</Link></li>
-                </ul>
+            <footer class="navbar navbar-expand-lg navbar-light bg-light">
+                    <li class="nav-link"><Link to ="/">Home</Link></li>
+                    <li class="nav-link"><Link to ="/passwordstrength">Password Strength</Link></li>
+                    <li class="nav-link"><Link to = "/stuff">All the Stuff</Link></li>
+                    <li class="nav-link"><Link to = "/toggle">Toggle</Link></li>
+                    <li class="nav-link"><Link to ="/list">List</Link></li>
+                    <li class="nav-link"><Link to ="/stepcount/:max/:steps">Steps</Link></li>
             </footer>
         );
     }

@@ -36,14 +36,14 @@ class TwoCounters extends React.Component {
         const { value1, value2 } = this.state
 
         return(
-            <div>
+            <div className="jumbotron">
                 <p>
-                    <button onClick={ this.handle1 }>+</button>
-                    <span>{ value1 }</span>
+                    <button onClick={ this.handle1 } className="btn btn-lg btn-danger">+</button>
+                    <span className="alert alert-danger mr-2 ml-2">{ value1 }</span>
                 </p>
                 <p>
-                    <button onClick={ this.handle2 }>+</button>
-                    <span >{ value2 }</span>
+                    <button onClick={ this.handle2 } className="btn btn-lg btn-success">+</button>
+                    <span className="alert alert-success mr-2 ml-2">{ value2 }</span>
                 </p>
             </div>
         )

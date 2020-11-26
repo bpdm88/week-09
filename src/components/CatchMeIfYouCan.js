@@ -16,7 +16,9 @@ class CatchMeIfYouCan extends React.Component {
 
     render() {
         return (
-            <button onClick = {this.handleClick} style={{marginTop: this.state.margin }}>Click</button>
+            <div class="jumbotron">
+                <button class="btn btn-primary btn-lg" onClick = {this.handleClick} style={{marginTop: this.state.margin }}>Click</button>
+            </div>
         )
     }
 }

@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React from "react";
 
 class Counter extends React.Component {
 
@@ -28,11 +28,11 @@ class Counter extends React.Component {
         const { counter } = this.state;
 
         return(
-            <Fragment>
-                <button onClick = {this.handleClickPlus}>+</button>
-                <button onClick = {this.handleClickMinus}>-</button>
-                <p>{ counter }</p>
-            </Fragment>
+            <section class="jumbotron">
+                <button class="btn btn-success" onClick = {this.handleClickPlus}>Plus</button>
+                <button class="btn btn-danger" onClick = {this.handleClickMinus}>Minus</button>
+                <h3>{ counter }</h3>
+            </section>
         )
     }
 }

@@ -32,9 +32,9 @@ class PasswordStrength extends React.Component {
 
     render() {
         return (
-            <section>
-                <form>
-                    <input onChange={this.handleChange} value={this.state.input} style={{background: this.handleColour()}}/>
+            <section class="jumbotron">
+                <form class="form-group">
+                    <input class="form-control" onChange={this.handleChange} value={this.state.input} style={{background: this.handleColour()}}/>
                 </form>
             </section>
         )

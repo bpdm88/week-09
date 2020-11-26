@@ -6,7 +6,7 @@ class Header extends React.Component {
         const { children } = this.props;
 
         return (
-            <header>
+            <header class="alert alert-warning alert-dismissible fade show" role="alert">
                 <h1>{ children }</h1>
             </header>
         );

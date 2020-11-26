@@ -19,7 +19,7 @@ class Square extends React.Component {
         let colour = this.state.default ? this.props.colour : 'green';
 
         return (
-            <div onClick = {this.handleClick} style={{
+            <div class="jumbotron" onClick = {this.handleClick} style={{
                 background: colour,
                 width: 200,
                 height: 200,

@@ -21,9 +21,9 @@ class ToggleText extends React.Component {
         let word = this.state.initial ? initial : alternative; 
 
         return(
-            <div>
-                <button onClick = {this.handleClick}>Toggle</button>
-                <p>{word}</p>
+            <div class="jumbotron">
+                <button class="btn btn-warning" onClick = {this.handleClick}>Toggle</button>
+                <h3>{word}</h3>
             </div>
         )
     }

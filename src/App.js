@@ -25,7 +25,7 @@ const App = () => (
                 <Stuff />
             </Route>
             <Route exact path="/toggle">
-                <ToggleText initial="Hello" alternative="world" />
+                <ToggleText initial="Hello" alternative="World" />
             </Route>
             <Route exact path="/list">
                 <List />

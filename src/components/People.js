@@ -11,9 +11,9 @@ class People extends React.Component {
 
         return (
             names ? 
-            <ul onClick = { this.handleClick }>
+            <ul class="jumbotron" onClick = { this.handleClick }>
                 {names.map((value, index) => (
-                    <li key = { index }>{ value }</li>
+                    <li class="list-group-item" key = { index }>{ value }</li>
                 ))}
             </ul> 
             : <p>Nothing to see here!</p>  

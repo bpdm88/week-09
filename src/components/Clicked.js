@@ -18,7 +18,9 @@ class Clicked extends React.Component {
         
     render() {
             return(
-                <p onClick = {this.handleClick}>{this.state.clicked ? "Clicked" : "Not Clicked!"}</p>
+                <div class="jumbotron">
+                <h3 onClick = {this.handleClick}>{this.state.clicked ? "Clicked" : "Not Clicked!"}</h3>
+                </div>
             );
         }  
 }

@@ -27,8 +27,9 @@ class GodCounter extends React.Component {
         const { counter } = this.state;
         
         return(
-            <div>
-                <p>{ counter }</p>
+            <div class="jumbotron">
+                <h2>God Counter:</h2>
+                <h3>{ counter }</h3>
             </div>
         )
     }

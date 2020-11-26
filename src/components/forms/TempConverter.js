@@ -40,12 +40,12 @@ class TempConverter extends React.Component {
         const { celcius, farenheit } = this.state;
 
         return(
-            <section>
-                <form>
+            <section class="jumbotron">
+                <form class="form-group">
                     <label for="celcius">Celcius</label>
-                    <input onChange={this.handleChangeC} value={ celcius } id="celcius" type="number"/>
+                    <input class="form-control" onChange={this.handleChangeC} value={ celcius } id="celcius" type="number"/>
                     <label for="farenheit">Farenheit</label>
-                    <input onChange={this.handleChangeF} value={ farenheit } id="farenheit" type="number"/>
+                    <input class="form-control" onChange={this.handleChangeF} value={ farenheit } id="farenheit" type="number"/>
                 </form>
             </section>
         )

@@ -35,13 +35,13 @@ class list extends React.Component {
         const { item, list } = this.state; 
 
         return(
-            <section>
-                <form onSubmit={this.handleSubmit}> 
+            <section class="jumbotron">
+                <form class="form-group" onSubmit={this.handleSubmit}> 
                     <label for="item">Item</label>
-                    <input id="item" onChange={this.handleChange} value={ item }/>
-                    <button>Add To list</button>
-                    <ul>{list.map((value, index) => (
-                        <li key = { index }>{ value }</li>
+                    <input class="form-control" id="item" onChange={this.handleChange} value={ item }/>
+                    <button class="btn btn-success">Add To list</button>
+                    <ul class="list-group">{list.map((value, index) => (
+                        <li class="list-group-item" key = { index }>{ value }</li>
                     ))}</ul>
                 </form>
             </section>

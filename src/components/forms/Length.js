@@ -16,11 +16,11 @@ class Length extends React.Component {
 
     render() {
        return (
-           <section>
-               <form>
-                   <input onChange={this.handleChange }value={this.state.input}/>
+           <section class="jumbotron">
+               <form class="form-group">
+                   <input class="form-control" onChange={this.handleChange }value={this.state.input}/>
                </form>
-               <p>Length: { this.state.input.length } </p>
+               <h3>Length: { this.state.input.length } </h3>
            </section>
        ) 
     }
