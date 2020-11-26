@@ -10,6 +10,10 @@ import CatchMeIfYouCan from './CatchMeIfYouCan';
 import RollCall from './RollCall';
 import GodCounter from './GodCounter';
 import TwoCounters from './TwoCounters';
+import Length from './forms/Length';
+import PasswordStrength from './forms/PasswordStrength';
+import TempConverter from './forms/TempConverter';
+import List from './forms/List';
 
 const Stuff = ({ showSquare }) => (
 <>
@@ -25,6 +29,10 @@ const Stuff = ({ showSquare }) => (
     <RollCall names = { ["Ben", "Josie", "James", "Tom"] }/>
     <GodCounter/>
     <TwoCounters/>
+    <Length/>
+    <PasswordStrength/>
+    <TempConverter/>
+    <List/>
 </>
 );
 
