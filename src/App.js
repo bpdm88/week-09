@@ -11,6 +11,7 @@ import StepCounter from "./components/StepCounter";
 import Forms from "./components/Forms";
 import Lifecycle from "./components/Lifecycle";
 import AddProp from "./components/AddProp";
+import PreMade from "./components/PreMade";
 
 const App = () => (
     <Router>
@@ -30,6 +31,9 @@ const App = () => (
             </Route>
             <Route exact path="/addprop">
                 <AddProp/>
+            </Route>
+            <Route exact path="/premade">
+                <PreMade/>
             </Route>
             <Route exact path="/toggle">
                 <ToggleText initial="Hello" alternative="World" />

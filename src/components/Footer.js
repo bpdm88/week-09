@@ -13,6 +13,7 @@ class Footer extends React.Component {
                     <li class="nav-link"><Link to ="/lifecycle">Lifecycle</Link></li>
                     <li class="nav-link"><Link to = "/toggle">Toggle</Link></li>
                     <li class="nav-link"><Link to ="/addprop">Adding Props</Link></li>
+                    <li class="nav-link"><Link to ="/premade">Pre Built Components</Link></li>
             </footer>
         );
     }
