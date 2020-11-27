@@ -12,6 +12,7 @@ import Forms from "./components/Forms";
 import Lifecycle from "./components/Lifecycle";
 import AddProp from "./components/AddProp";
 import PreMade from "./components/PreMade";
+import Quiz from "./components/Quiz";
 
 const App = () => (
     <Router>
@@ -27,13 +28,16 @@ const App = () => (
                 <Stuff />
             </Route>
             <Route exact path="/lifecycle">
-                <Lifecycle/>
+                <Lifecycle />
             </Route>
             <Route exact path="/addprop">
-                <AddProp/>
+                <AddProp />
             </Route>
             <Route exact path="/premade">
-                <PreMade/>
+                <PreMade />
+            </Route>
+            <Route exact path="/quiz">
+                <Quiz />
             </Route>
             <Route exact path="/toggle">
                 <ToggleText initial="Hello" alternative="World" />
@@ -42,10 +46,15 @@ const App = () => (
                 path="/square/:colour"
                 render={({ match }) => <Square colour={match.params.colour} />}
             />
-			<Route
-				path="/stepcount/:max/:steps"
-				render={({ match }) => <StepCounter max={+match.params.max} steps={+match.params.steps} />}
-			/>
+            <Route
+                path="/stepcount/:max/:steps"
+                render={({ match }) => (
+                    <StepCounter
+                        max={+match.params.max}
+                        steps={+match.params.steps}
+                    />
+                )}
+            />
             <FourOhFour />
         </Switch>
         <Footer />
