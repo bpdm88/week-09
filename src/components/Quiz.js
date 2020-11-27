@@ -2,6 +2,7 @@ import Multiplier from "./quiz/Multiplier";
 import Even from "./quiz/Even";
 import CountBy from "./quiz/CountBy";
 import HideMe from "./quiz/HideMe";
+import MiniumLength from "./quiz/MinimumLength";
 
 const Quiz = () => (
     <>
@@ -9,6 +10,7 @@ const Quiz = () => (
         <Even />
         <CountBy step={5} />
         <HideMe>Blah Blah Blah</HideMe>
+        <MiniumLength />
     </>
 );
 
